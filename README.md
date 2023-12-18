@@ -12,7 +12,7 @@ The **React Native EV Charger Locator** is a personal endeavor designed as a pla
 
 ## Getting Started
 
-This section provides instructions to set up and run the project for development and learning purposes.
+This section provides instructions to set up and run the project for development and learning purposes. The app uses Expo Go for easy testing and deployment.
 
 ### Prerequisites
 
@@ -32,14 +32,15 @@ Necessary installations for running the project:
    ```sh
    npm install
    ```
-3. **Launch the app:**
+3. **Start project with Expo**
    ```sh
-   npx react-native run-android
+   expo start
    ```
-   or
-   ```sh
-   npx react-native run-ios
-   ```
+
+## Using the App
+
+After starting the project, scan the QR code with the Expo Go app on your smartphone or run it on an iOS/Android emulator to see the app in action.
+
 
 ## Learning Documentation
 
