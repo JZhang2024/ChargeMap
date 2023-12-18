@@ -34,7 +34,7 @@ Necessary installations for running the project:
    ```
 3. **Start project with Expo**
    ```sh
-   expo start
+   npx expo start
    ```
 
 ## Using the App
