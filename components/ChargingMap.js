@@ -17,9 +17,13 @@ const styles = StyleSheet.create({
   },
   searchBar: {
     position: 'absolute',
-    top: 0,
+    top: 20,
     left: 0,
     right: 0,
+    barTintColor:"transparent",
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderRadius: 5
   },
 });
 
@@ -64,11 +68,15 @@ const ChargingMap = () => {
         ))} */}
       </MapView>
       <SearchBar
+        inputStyle={{backgroundColor: 'white'}}
         containerStyle={styles.searchBar}
-        placeholder="Type Here..."
+        inputContainerStyle={{backgroundColor: 'white'}}
+        placeholderTextColor={'#g5g5g5'}
         onChangeText={setSearch}
         value={search}
         onSubmitEditing={handleSearch}
+        placeholder="Enter Address Here..."
+
       />
     </View>
   );
