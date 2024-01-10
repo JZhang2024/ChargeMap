@@ -1,45 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-import { SearchBar } from 'react-native-elements';
 import Geocoder from 'react-native-geocoding';
-import { fetchChargingStations } from '../api';
-import { GOOGLE_MAPS_API_KEY } from '@env'
+import SearchBar from 'react-native-elements';
 
-Geocoder.init(GOOGLE_MAPS_API_KEY);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  map: {
-    flex: 1,
-  },
-  searchBar: {
-    position: 'absolute',
-    top: 20,
-    left: 0,
-    right: 0,
-    barTintColor:"transparent",
-    backgroundColor: 'white',
-    borderWidth: 1,
-    borderRadius: 5
-  },
-});
-
-const ChargingMap = () => {
-  const [chargingStations, setChargingStations] = useState([]);
+const ChargingMap = ({ places }) => {
   const [region, setRegion] = useState({
-    latitude: 37.7749,
-    longitude: -122.4194,
+    latitude: 37.78825,
+    longitude: -122.4324,
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421,
   });
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetchChargingStations().then((data) => setChargingStations(data));
-  }, []);
+    // Place markers on the map
+    // This is a placeholder, replace with your actual implementation
+    placeMarkers(places);
+  }, [places]);
 
   const handleSearch = () => {
     Geocoder.from(search)
@@ -60,12 +38,12 @@ const ChargingMap = () => {
         style={styles.map}
         region={region}
       >
-        {/* {chargingStations.map((station, index) => (
+        {places.map((place, index) => (
           <Marker
             key={index}
-            coordinate={{ latitude: station.latitude, longitude: station.longitude }}
+            coordinate={{ latitude: place.latitude, longitude: place.longitude }}
           />
-        ))} */}
+        ))}
       </MapView>
       <SearchBar
         inputStyle={{backgroundColor: 'white'}}
@@ -76,7 +54,6 @@ const ChargingMap = () => {
         value={search}
         onSubmitEditing={handleSearch}
         placeholder="Enter Address Here..."
-
       />
     </View>
   );
