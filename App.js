@@ -6,7 +6,7 @@ import { fetchChargingStations } from './api';
 const App = () => {
   const [places, setPlaces] = useState([]);
 
-  const findPlaces = async () => {
+  const findChargers = async () => {
     // Use geolocation API to find nearby places of type 'charging station'
     // This is a placeholder, replace with actual API call
     const newPlaces = await fetchChargingStations();
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div>
-      <FindNearbyChargersButton onClick={findPlaces} />
+      <FindNearbyChargersButton onClick={findChargers} />
       <ChargingMap places={places} />
     </div>
   );
