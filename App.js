@@ -8,8 +8,7 @@ const App = () => {
 
   const findChargers = async () => {
     // Use geolocation API to find nearby places of type 'charging station'
-    // This is a placeholder, replace with actual API call
-    const newPlaces = await fetchChargingStations();
+    const newPlaces = await fetchChargingStations(40.7128, -74.0060);
     setPlaces(newPlaces);
   };
 

@@ -1,5 +1,5 @@
-require('dotenv').config();
-
-const GOOGLE_MAPS_KEY = process.env.GOOGLE_MAPS_KEY;
-
-module.exports = { GOOGLE_MAPS_KEY };
+import dotenv from 'dotenv';
+dotenv.config();
+export default {
+    GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY
+};

@@ -1,8 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import Geocoder from 'react-native-geocoding';
 import SearchBar from 'react-native-elements';
+import '../config.js';
+
+const {GOOGLE_MAPS_API_KEY} = config;
+
+Geocoder.init(GOOGLE_MAPS_API_KEY);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    flex: 1,
+  },
+  searchBar: {
+    position: 'absolute',
+    top: 20,
+    left: 0,
+    right: 0,
+    barTintColor:"transparent",
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderRadius: 5
+  },
+});
 
 const ChargingMap = ({ places }) => {
   const [region, setRegion] = useState({
