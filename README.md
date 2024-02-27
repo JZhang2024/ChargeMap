@@ -4,11 +4,11 @@
 
 The **React Native EV Charger Locator** is a personal endeavor designed as a platform for self-education in mobile application development using React Native. This project involves developing a basic application for locating electric vehicle (EV) charging stations, serving as a practical example to learn and showcase mobile development skills, particularly in cross-platform UI/UX design.
 
-### Project Objectives
+### Main Technologies
 
-- **Educational Focus:** A hands-on approach to understanding React Native and mobile app development concepts.
-- **Skill Development:** Demonstrating and improving coding skills through a real-world application scenario.
-- **Project Documentation:** Recording the learning process, challenges encountered, and problem-solving strategies.
+- **React Native and Expo:** Cross-platform development framework and testing/deployment platform
+- **Tamagui:** Style and UI for React (web and native) + optimizing compiler.
+- **Google Maps API:** To retrieve charging station data, geolocation data, and display for user on mapview component (react-native-maps uses Google/Apple depending on platform).
 
 ## Getting Started
 
