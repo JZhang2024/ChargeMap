@@ -26,7 +26,7 @@ Necessary installations for running the project:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your_username/ReactNativeEVChargerLocator.git
+   git clone https://github.com/JZhang2024/evChargerLocator-reactNative.git
    ```
 2. **Install the required packages:**
    ```sh
@@ -42,9 +42,11 @@ Necessary installations for running the project:
 After starting the project, scan the QR code with the Expo Go app on your smartphone or run it on an iOS/Android emulator to see the app in action.
 
 
-## Learning Documentation
+## Figma
 
-Throughout this project, I will be documenting my learning experiences, including the challenges I face and the solutions I discover. This documentation is aimed at tracking progress and aiding others who might embark on a similar journey.
+Included below are images of a prototype design for the app drafted in Figma. This will be updated as features are added/changed.
+![image](https://github.com/JZhang2024/evChargerLocator-reactNative/assets/67939471/3254c51d-a27c-4958-a98f-7f9303e508c0)
+
 
 ## Contributions
 
