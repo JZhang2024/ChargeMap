@@ -26,7 +26,7 @@ Necessary installations for running the project:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/JZhang2024/evChargerLocator-reactNative.git
+   git clone https://github.com/JZhang2024/ChargeMap.git
    ```
 2. **Install the required packages:**
    ```sh
