@@ -1,8 +1,8 @@
-# React Native EV Charger Locator: Learning Project
+# ChargeMap: Learning Project
 
 ## About the Project
 
-The **React Native EV Charger Locator** is a personal endeavor designed as a platform for self-education in mobile application development using React Native. This project involves developing a basic application for locating electric vehicle (EV) charging stations, serving as a practical example to learn and showcase mobile development skills, particularly in cross-platform UI/UX design.
+**ChargeMap** is a personal endeavor designed as a platform for self-education in mobile application development using React Native. This project involves developing a basic application for locating electric vehicle (EV) charging stations, serving as a practical example to learn and showcase mobile development skills, particularly in cross-platform UI/UX design.
 
 ### Main Technologies
 
